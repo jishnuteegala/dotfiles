@@ -1,0 +1,17 @@
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[user]
+	name = Jishnu Teegala
+	email = 134275562+jishnuteegala@users.noreply.github.com
+	signingkey = 7400A6FC6A1AF353
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
