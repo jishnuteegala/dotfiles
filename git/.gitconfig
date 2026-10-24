@@ -15,3 +15,16 @@
 	defaultBranch = main
 [push]
 	autoSetupRemote = true
+[credential "https://github.com"]
+	helper =
+	helper = !gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !gh auth git-credential
+# Loaded last so a machine can override anything above (different signingkey,
+# no gpgsign, different credential helper) without editing this repo file.
+# Example ~/.gitconfig.local:
+#   [user]
+#   	signingkey = <machine-specific key id>
+[include]
+	path = ~/.gitconfig.local

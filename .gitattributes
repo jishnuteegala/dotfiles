@@ -1,0 +1,4 @@
+# Shell files must keep LF - CRLF shebangs/scripts break unix bash.
+*.sh           text eol=lf
+.bashrc        text eol=lf
+.bash_profile  text eol=lf
